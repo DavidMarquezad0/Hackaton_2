@@ -1,0 +1,112 @@
+/* Reglas de reseteo */
+body {
+    margin: 0;
+}
+
+
+.hero {
+    background-image: url(img/imgnew.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    /*height */
+    height: clamp(200px, 300px, 100vh);
+    position: relative;
+
+}
+
+.hero-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-size: 36px;
+    margin-right: 20px;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background-color: #729afe7d;
+    padding: 10px;
+    color: white;
+    margin-left: 20px;
+}
+
+.sobremicentrar {
+    text-align: center;
+}
+
+.sobremi{
+    height: clamp(200px, 100px, 100vh);
+    background-color: #7299FE;
+    overflow: hidden;
+}
+
+progress {
+    appearance: none;
+}
+
+.misskillsground {
+    overflow: hidden;
+    background: #9022FF;
+
+}
+
+.centrar {
+    text-align: center;
+
+}
+
+progress::-webkit-progress-bar {
+    border-radius: 10cm;
+    background-color: white;
+
+}
+
+progress::-webkit-progress-value {
+    border-radius: 10cm;
+    background: #57EFF9;
+}
+
+.wrapper-mis-skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: stretch;
+    gap: 5px;
+}
+
+.wrapper-mis-skill{
+    margin-bottom: 20px;
+}
+
+.porta {
+    text-align: center;
+}
+
+.wrapper-portafolio {
+    background-color: #FFD233;
+    overflow: hidden;
+}
+
+.clients {
+    text-align: center;
+}
+
+.wrapper-clientes {
+    background-color: #3F4E62;
+    overflow: hidden;
+}
+
+.contact {
+    text-align: center;
+}
+
+.wrapper-contactos {
+    background-color:#1687A0;
+    overflow: hidden;
+}
+
