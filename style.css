@@ -1,6 +1,7 @@
 /* Reglas de reseteo */
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -8,9 +9,8 @@ body {
     background-image: url(img/imgnew.jpg);
     background-position: center;
     background-size: cover;
-    height: 350px;
-    /*height */
-    height: clamp(200px, 300px, 100vh);
+    /*height: 350px;*/
+    height: clamp(500px, 600px, 100vh);
     position: relative;
 
 }
@@ -28,6 +28,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
+    font-size: 20px;
 
     background-color: #729afe7d;
     padding: 10px;
@@ -40,69 +41,155 @@ body {
 }
 
 .sobremi{
-    height: clamp(200px, 100px, 100vh);
+    height: clamp(200px, 600px, 100vh);
     background-color: #7299FE;
-    overflow: hidden;
+
+    /* arreglos overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
 }
 
-progress {
-    appearance: none;
+/* arreglos */
+.contenidosobre {
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: justify;
+
+}
+/* arreglos */
+.Vercv {
+    font-size: 20px;
+    width: 187px;
+    height: 62px;
+    top: 811px;
+    align-self: right;
+    color: white;
+    background-color: #D16FFF;
+    border-radius: 20px;
+    margin-left: 38px;
+    
 }
 
 .misskillsground {
-    overflow: hidden;
+    /* arreglos */
+    height: clamp(200px, 100vw, 100vh);
     background: #9022FF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
 }
 
+
+/* arreglos */
+.wrapper-mis-skills div{
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.wrapper-mis-skills section{
+    margin-bottom: 20px;
+}
+
+/* arreglos */
+progress{
+    appearance: none;
+    width: 100%;
+}
+
+.wrapper-mis-skills {
+    /* arreglos */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    gap: 30px;
+    padding: 10%;
+}
+
+
+
 .centrar {
     text-align: center;
+    color: #26CC4B;
 
 }
 
 progress::-webkit-progress-bar {
-    border-radius: 10cm;
-    background-color: white;
+    border-radius: 10em;
+    background-color: rgb(217, 217, 217);
 
 }
 
 progress::-webkit-progress-value {
-    border-radius: 10cm;
+    border-radius: 10em;
     background: #57EFF9;
-}
-
-.wrapper-mis-skills{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: stretch;
-    gap: 5px;
-}
-
-.wrapper-mis-skill{
-    margin-bottom: 20px;
 }
 
 .porta {
     text-align: center;
+    color: #00AD84;
 }
 
+/* arreglos */
 .wrapper-portafolio {
+    height: clamp(200px, 100vw, 100vh);
     background-color: #FFD233;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* arreglos */
+.wrapper-porta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 20px;
+
+}
+
+.wrapper-portafolio img {
+    width: 80%;
+    margin-bottom: 30px;
+    border: 2px solid white;
+}
+
+.wrapper-clientes {
+    height: clamp(200px, 500px, 100vh);
+    background-color: #3F4E62;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .clients {
     text-align: center;
+    color: #ADFF28;
 }
 
-.wrapper-clientes {
-    background-color: #3F4E62;
-    overflow: hidden;
+.img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 20px;
 }
+
+.inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 20px;
+    margin-bottom: 15%;
+}
+
 
 .contact {
     text-align: center;
+    color: #FF1B1B;
+    ;
 }
 
 .wrapper-contactos {
